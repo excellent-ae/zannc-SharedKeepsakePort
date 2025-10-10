@@ -1,0 +1,11 @@
+{
+    "namespace": "zannc",
+    "name": "SharedKeepsakePort",
+    "description": "",
+    "version_number": "0.0.1",
+    "dependencies": [
+        "Hell2Modding-Hell2Modding-1.0.44"
+    ],
+    "website_url": "",
+    "FullName": "zannc-SharedKeepsakePort"
+}
