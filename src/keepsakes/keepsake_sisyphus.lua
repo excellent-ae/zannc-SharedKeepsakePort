@@ -76,7 +76,7 @@ function CreateKeepsake_Sisyphus()
 		},
 
 		AddOutgoingDamageModifiers = {
-			EmptySlotMultiplier = 1.5,
+			EmptySlotMultiplier = { BaseValue = 1.5, SourceIsMultiplier = true },
 			EmptySlotValidData = {
 				Melee = WeaponSets.HeroNonExWeapons,
 				Secondary = WeaponSets.HeroSecondaryWeapons,
