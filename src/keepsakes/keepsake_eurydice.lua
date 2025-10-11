@@ -61,6 +61,7 @@ function CreateKeepsake_Eurydice()
 			Common = "Frame_Keepsake_Rank1",
 			Rare = "Frame_Keepsake_Rank2",
 			Epic = "Frame_Keepsake_Rank3",
+			Heroic = "Frame_Keepsake_Rank4",
 		},
 
 		CustomRarityLevels = {
@@ -102,14 +103,12 @@ function CreateKeepsake_Eurydice()
 	}
 end
 
-CreateKeepsake_Eurydice()
-
 --#region Eurydice Data
 -- Used for when you have it equipped
 local keepsake_eurydice = sjson.to_object({
 	Id = "ShieldBossKeepsake_Tray",
 	InheritFrom = "ShieldBossKeepsake",
-	Description = "In the final encounter in each Underworld region, take {#BoldFormatGraft}0 {#Prev}damage the first {#AltUpgradeFormat}{$TooltipData.ExtractData.TooltipHits} {#Prev}times foes hit you.",
+	Description = "In the final encounter in each region, take {#BoldFormatGraft}0 {#Prev}damage the first {#AltUpgradeFormat}{$TooltipData.ExtractData.TooltipHits} {#Prev}times foes hit you.",
 }, Order)
 
 -- In rack description
@@ -117,7 +116,7 @@ local keepsakerack_eurydice = sjson.to_object({
 	Id = "ShieldBossKeepsake",
 	InheritFrom = "BaseBoonMultiline",
 	DisplayName = "Evergreen Acorn",
-	Description = "In the final encounter in each Underworld region, take {#BoldFormatGraft}0 {#Prev}damage the first {#AltUpgradeFormat}{$TooltipData.ExtractData.TooltipHits} {#Prev}times foes hit you.",
+	Description = "In the final encounter in each region, take {#BoldFormatGraft}0 {#Prev}damage the first {#AltUpgradeFormat}{$TooltipData.ExtractData.TooltipHits} {#Prev}times foes hit you.",
 }, Order)
 
 local signoff_eurydice = sjson.to_object({
@@ -127,7 +126,7 @@ local signoff_eurydice = sjson.to_object({
 
 local signoff_eurydicemax = sjson.to_object({
 	Id = "SignoffEurydice_Max",
-	DisplayName = "From {#AwardMaxFormat}Eurydice{#Prev}; you share an {#AwardMaxFormat}Inspiring Bond.{!Icons.ObjectiveSeparatorDark}}Singing for the joy of it, she lives for the moment, even in death.",
+	DisplayName = "From {#AwardMaxFormat}Eurydice{#Prev}; you share an {#AwardMaxFormat}Inspiring Bond{#Prev}.{!Icons.ObjectiveSeparatorDark}}Singing for the joy of it, she lives for the moment, even in death.",
 }, Order)
 
 -- Icon JSON data
@@ -145,7 +144,7 @@ local keepsakemaxCorner_eurydice = sjson.to_object({
 
 local keepsakemax_eurydice = sjson.to_object({
 	Name = "Keepsake_Eurydice",
-	InheritFrom = "KeepsakeIcon",
+	InheritFrom = "KeepsakeMax",
 	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\KeepsakeMaxGift\\Eurydice_02"),
 }, IconOrder)
 
@@ -164,3 +163,5 @@ sjson.hook(GUIBoonsVFXFile, function(data)
 	table.insert(data.Animations, keepsakemax_eurydice)
 end)
 --#endregion
+
+CreateKeepsake_Eurydice()

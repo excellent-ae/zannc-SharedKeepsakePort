@@ -59,6 +59,7 @@ function CreateKeepsake_Sisyphus()
 			Common = "Frame_Keepsake_Rank1",
 			Rare = "Frame_Keepsake_Rank2",
 			Epic = "Frame_Keepsake_Rank3",
+			Heroic = "Frame_Keepsake_Rank4",
 		},
 
 		CustomRarityLevels = {
@@ -110,8 +111,6 @@ function CreateKeepsake_Sisyphus()
 	}
 end
 
-CreateKeepsake_Sisyphus()
-
 -- =================================================
 --                 Sisyphus SJSON
 -- =================================================
@@ -137,7 +136,7 @@ local signoff_sisyphus = sjson.to_object({
 
 local signoff_sisyphusmax = sjson.to_object({
 	Id = "SignoffSisyphus_Max",
-	DisplayName = "From {#AwardMaxFormat}Sisyphus{#Prev}; you share a {#AwardMaxFormat}Rock-Solid Bond.{!Icons.ObjectiveSeparatorDark}If he can hoist a boulder on his own, he knows he can be of some support.",
+	DisplayName = "From {#AwardMaxFormat}Sisyphus{#Prev}; you share a {#AwardMaxFormat}Rock-Solid Bond{#Prev}.{!Icons.ObjectiveSeparatorDark}If he can hoist a boulder on his own, he knows he can be of some support.",
 }, Order)
 
 -- Icon JSON data
@@ -155,7 +154,7 @@ local keepsakemaxCorner_sisyphus = sjson.to_object({
 
 local keepsakemax_sisyphus = sjson.to_object({
 	Name = "Keepsake_Sisyphus",
-	InheritFrom = "KeepsakeIcon",
+	InheritFrom = "KeepsakeMax",
 	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\KeepsakeMaxGift\\Sisyphus_02"),
 }, IconOrder)
 
@@ -173,3 +172,5 @@ sjson.hook(GUIBoonsVFXFile, function(data)
 	table.insert(data.Animations, keepsakemaxCorner_sisyphus)
 	table.insert(data.Animations, keepsakemax_sisyphus)
 end)
+
+CreateKeepsake_Sisyphus()

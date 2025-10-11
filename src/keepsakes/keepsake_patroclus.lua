@@ -73,6 +73,7 @@ function CreateKeepsake_Patroclus()
 			Common = "Frame_Keepsake_Rank1",
 			Rare = "Frame_Keepsake_Rank2",
 			Epic = "Frame_Keepsake_Rank3",
+			Heroic = "Frame_Keepsake_Rank4",
 		},
 
 		CustomRarityLevels = {
@@ -128,8 +129,6 @@ function CreateKeepsake_Patroclus()
 	}
 end
 
-CreateKeepsake_Patroclus()
-
 --#region Patroclus Data
 -- Used for when you have it equipped
 local keepsake_patroclus = sjson.to_object({
@@ -153,7 +152,7 @@ local signoff_patroclus = sjson.to_object({
 
 local signoff_patroclusmax = sjson.to_object({
 	Id = "SignoffPatroclus_Max",
-	DisplayName = "From {#AwardMaxFormat}Patroclus{#Prev}; you share an {#AwardMaxFormat}Enlightened Bond.{!Icons.ObjectiveSeparatorDark}}He passed bitterly from mortal life, but with you, rose above it all.",
+	DisplayName = "From {#AwardMaxFormat}Patroclus{#Prev}; you share an {#AwardMaxFormat}Enlightened Bond{#Prev}.{!Icons.ObjectiveSeparatorDark}}He passed bitterly from mortal life, but with you, rose above it all.",
 }, Order)
 
 -- Icon JSON data
@@ -171,7 +170,7 @@ local keepsakemaxCorner_patroclus = sjson.to_object({
 
 local keepsakemax_patroclus = sjson.to_object({
 	Name = "Keepsake_Patroclus",
-	InheritFrom = "KeepsakeIcon",
+	InheritFrom = "KeepsakeMax",
 	FilePath = rom.path.combine(_PLUGIN.guid, "GUI\\Screens\\AwardMenu\\KeepsakeMaxGift\\Patroclus_02"),
 }, IconOrder)
 
@@ -210,3 +209,5 @@ function mod.PatroclusRetaliate(unit, args, triggerArgs)
 		TraitUIActivateTrait(traitData, { FlashOnActive = true, Duration = cooldown })
 	end
 end
+
+CreateKeepsake_Patroclus()
