@@ -5,9 +5,9 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "zannc"
 name = "SharedKeepsakePort"
-versionNumber = "1.0.0"
+versionNumber = "1.0.1"
 description = "A mod which ports keepsakes from Hades 1 to Hades 2, mainly created to be used in conjuction with Hades_Biomes, and KeepsakePort - which call this as a dependency"
-websiteUrl = "https://github.com/zanncdwbl/zannc-SharedKeepsakePort"
+websiteUrl = "https://github.com/excellent-ae/zannc-SharedKeepsakePort"
 containsNsfwContent = false
 
 [package.dependencies]
