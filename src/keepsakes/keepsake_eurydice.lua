@@ -11,7 +11,7 @@ function CreateKeepsake_Eurydice()
 			InheritFrom = { "DefaultGiftData" },
 			MaxedRequirement = {
 				{
-					PathTrue = { "GameState", "TextLinesRecord", "EurydiceGift09_A" },
+					PathTrue = { "GameState", "TextLinesRecord", "EurydiceGift08" },
 				},
 			},
 			MaxedIcon = "Keepsake_Eurydice_Corner",
@@ -91,7 +91,7 @@ function CreateKeepsake_Eurydice()
 			{
 				GameStateRequirements = {
 					{
-						PathTrue = { "GameState", "TextLinesRecord", "EurydiceGift09_A" },
+						PathTrue = { "GameState", "TextLinesRecord", "EurydiceGift08" },
 					},
 				},
 				Text = "SignoffEurydice_Max",

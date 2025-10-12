@@ -11,7 +11,7 @@ function CreateKeepsake_Patroclus()
 			InheritFrom = { "DefaultGiftData" },
 			MaxedRequirement = {
 				{
-					PathTrue = { "GameState", "TextLinesRecord", "PatroclusGift09_A" },
+					PathTrue = { "GameState", "TextLinesRecord", "PatroclusGift08_A" },
 				},
 			},
 			MaxedIcon = "Keepsake_Patroclus_Corner",
@@ -117,7 +117,7 @@ function CreateKeepsake_Patroclus()
 			{
 				GameStateRequirements = {
 					{
-						PathTrue = { "GameState", "TextLinesRecord", "PatroclusGift09_A" },
+						PathTrue = { "GameState", "TextLinesRecord", "PatroclusGift08_A" },
 					},
 				},
 				Text = "SignoffPatroclus_Max",
