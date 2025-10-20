@@ -15,6 +15,14 @@ local function CheckForKeepsakeTraits(args)
 	end
 end
 
+function EndEncounterEffects_wrap(base, currentRun, currentRoom, currentEncounter)
+	local traitData = GetHeroTrait("ShieldAfterHitKeepsake")
+
+	if traitData then
+		TraitUIDeactivateTrait(traitData)
+	end
+end
+
 function TraitUIActivateTraits_Wrap(base, args)
 	CheckForKeepsakeTraits()
 end
