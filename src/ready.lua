@@ -13,3 +13,8 @@ modutil.mod.Path.Wrap("TraitUIActivateTraits", function(base, args)
 	TraitUIActivateTraits_Wrap(base, args)
 	base(args)
 end)
+
+modutil.mod.Path.Wrap("EndEncounterEffects", function(base, currentRun, currentRoom, currentEncounter)
+	EndEncounterEffects_wrap(base, currentRun, currentRoom, currentEncounter)
+	base(currentRun, currentRoom, currentEncounter)
+end)

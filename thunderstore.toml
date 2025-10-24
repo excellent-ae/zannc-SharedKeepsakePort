@@ -5,19 +5,19 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "zannc"
 name = "SharedKeepsakePort"
-versionNumber = "1.0.1"
+versionNumber = "1.0.2"
 description = "A mod which ports keepsakes from Hades 1 to Hades 2, mainly created to be used in conjuction with Hades_Biomes, and KeepsakePort - which call this as a dependency"
 websiteUrl = "https://github.com/excellent-ae/zannc-SharedKeepsakePort"
 containsNsfwContent = false
 
 [package.dependencies]
-Hell2Modding-Hell2Modding = "1.0.67"
+Hell2Modding-Hell2Modding = "1.0.70"
 SGG_Modding-ModUtil = "4.0.1"
 LuaENVY-ENVY = "1.2.0"
 SGG_Modding-ReLoad = "1.0.2"
 SGG_Modding-SJSON = "1.0.0"
 SGG_Modding-Chalk = "2.1.1"
-zannc-KeepsakeExtender = "1.0.0"
+zannc-KeepsakeExtender = "1.0.1"
 
 
 [build]
