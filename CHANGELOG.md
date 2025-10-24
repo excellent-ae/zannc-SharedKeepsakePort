@@ -1,10 +1,14 @@
 # Changelog
 
 ## [Unreleased]
+- Fix MaxRequirement for Euyridce and Patroclus for Hades_Biomes.
+- Disable Patroclus Keepsake UI when an encounter ends.
 
 ## [1.0.1] - 2025-10-11
+- Fix Icon.
 
 ## [1.0.0] - 2025-10-11
+- Initial Release.
 
 [unreleased]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.0.1...HEAD
 [1.0.1]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.0.0...1.0.1
