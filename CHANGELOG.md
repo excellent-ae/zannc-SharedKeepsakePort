@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Fixed: "Shattered Shackle" description text does not include Omega moves, even though the bonus also applies to them.
+
 ## [1.4.1] - 2026-05-15
 
 - Fixed: The displayed damage bonus value for Thanatos' keepsake resets on level up if `KeepsakePort` is not installed.

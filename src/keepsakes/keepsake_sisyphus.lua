@@ -34,8 +34,8 @@ gods.CreateKeepsake({
 
 	Keepsake = {
 		displayName = "Shattered Shackle",
-		description = "Your {$Keywords.Attack}, {$Keywords.Special} and {$Keywords.Cast} each deal {#UpgradeFormat}{$TooltipData.ExtractData.TooltipBonus:P} {#Prev}damage while not empowered by a {$Keywords.GodBoon}.",
-		trayDescription = "Your {$Keywords.Attack}, {$Keywords.Special} and {$Keywords.Cast} each deal {#UpgradeFormat}{$TooltipData.ExtractData.TooltipBonus:P} {#Prev}damage while not empowered by a {$Keywords.GodBoon}.",
+		description = "Your {$Keywords.AttackSet}, {$Keywords.SpecialSet} and {$Keywords.CastSet} each deal {#UpgradeFormat}{$TooltipData.ExtractData.TooltipBonus:P} {#Prev}damage while not empowered by a {$Keywords.GodBoon}.",
+		trayDescription = "Your {$Keywords.AttackSet}, {$Keywords.SpecialSet} and {$Keywords.CastSet} each deal {#UpgradeFormat}{$TooltipData.ExtractData.TooltipBonus:P} {#Prev}damage while not empowered by a {$Keywords.GodBoon}.",
 		signoffMax = "From {#AwardMaxFormat}Sisyphus{#Prev}; you share a {#AwardMaxFormat}Rock-Solid Bond{#Prev}.{!Icons.ObjectiveSeparatorDark}If he can hoist a boulder on his own, he knows he can be of some support.",
 	},
 
