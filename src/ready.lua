@@ -66,7 +66,7 @@ modutil.mod.Path.Wrap("EndEncounterEffects", function(base, currentRun, currentR
     -- function FieldsEncounterEndPresentation( encounter, currentRun )
     -- function CheckForEncounterEnemiesDead( eventSource, args )
 
-    if currentEncounter == currentRoom.Encounter and currentEncounter.EncounterType ~= "NonCombat" or currentEncounter == game.MapState.EncounterOverride then -- and not currentRoom.TimerBlock
+    if not currentEncounter.SkipEndEncounterEffects and (currentEncounter == currentRoom.Encounter and currentEncounter.EncounterType ~= "NonCombat" or currentEncounter == game.MapState.EncounterOverride) then -- and not currentRoom.TimerBlock
         currentEncounter.ClearTime = nil
         if currentEncounter.StartTime then
             currentEncounter.ClearTime = currentRun.GameplayTime - currentEncounter.StartTime

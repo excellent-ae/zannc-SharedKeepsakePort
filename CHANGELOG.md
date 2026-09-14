@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Fixed: "Pierced Butterfly" may trigger twice per room in Olympus.
+
 ## [1.4.2] - 2026-05-16
 
 - Fixed: "Shattered Shackle" description text does not include Omega moves, even though the bonus also applies to them.
