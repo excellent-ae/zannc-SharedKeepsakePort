@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.4.3] - 2026-09-14
+
 - Fixed: "Pierced Butterfly" may trigger twice per room in Olympus.
 
 ## [1.4.2] - 2026-05-16
@@ -107,7 +109,8 @@
 
 - Initial Release.
 
-[unreleased]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.2...HEAD
+[unreleased]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.3...HEAD
+[1.4.3]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.2...1.4.3
 [1.4.2]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.1...1.4.2
 [1.4.1]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.0...1.4.1
 [1.4.0]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.2.0...1.4.0
