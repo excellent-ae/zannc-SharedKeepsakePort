@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Fixed: The game may sometimes crash when "Broken Spearpoint" triggers in certain situations or on damage from specific sources.
+
 ## [1.4.3] - 2026-09-14
 
 - Fixed: "Pierced Butterfly" may trigger twice per room in Olympus.

@@ -83,10 +83,15 @@ game.EffectData[_PLUGIN.guid .. "PatroclusInvulnerable"] = {
 
 function mod.PatroclusRetaliate(unit, args, triggerArgs)
 	local victim = triggerArgs.Victim
+
+	if not victim or not victim.Health or victim.Health < 0 or victim.IsDead then
+		return
+	end
+
 	local cooldown = args.Cooldown or 7.0
 	local cooldownName = "PatroclusInvulnerability" .. victim.ObjectId
 
-	if not victim or not victim.Health or victim.Health < 0 or victim.IsDead or not CheckCooldown(cooldownName, args.Cooldown) or triggerArgs.DamageAmount <= 0 then
+	if not CheckCooldown(cooldownName, args.Cooldown) or triggerArgs.DamageAmount <= 0 then
 		return
 	end
 
