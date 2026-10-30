@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.4.4] - 2026-10-30
+
 - Fixed: The game may sometimes crash when "Broken Spearpoint" triggers in certain situations or on damage from specific sources.
 
 ## [1.4.3] - 2026-09-14
@@ -111,7 +113,8 @@
 
 - Initial Release.
 
-[unreleased]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.3...HEAD
+[unreleased]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.4...HEAD
+[1.4.4]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.3...1.4.4
 [1.4.3]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.2...1.4.3
 [1.4.2]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.1...1.4.2
 [1.4.1]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.0...1.4.1
