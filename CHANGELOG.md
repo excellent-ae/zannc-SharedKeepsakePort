@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Internal changes for future Achilles support in `Zagreus' Journey`.
+
 ## [1.4.4] - 2026-10-30
 
 - Fixed: The game may sometimes crash when "Broken Spearpoint" triggers in certain situations or on damage from specific sources.
