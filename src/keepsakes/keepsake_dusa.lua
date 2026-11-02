@@ -33,7 +33,7 @@ gods.CreateKeepsake({
 
     Keepsake = {
         displayName = "Harpy Feather Duster",
-        description = "Broken urns have a {#AltUpgradeFormat}{$TooltipData.ExtractData.TooltipDropChance}% {#Prev}chance to contain {!Icons.HealthRestore_Small} items.",
+        description = "Broken urns have a {#AltUpgradeFormat}{$TooltipData.ExtractData.TooltipDropChance}% {#Prev}chance to contain {!Icons.HealthRestore} items.",
         signoffMax = "From {#AwardMaxFormat}Dusa{#Prev}; you share an {#AwardMaxFormat}Immaculate Bond{#Prev}.{!Icons.ObjectiveSeparatorDark}She lifts you up without effort. You give her courage to fly.",
     },
 
