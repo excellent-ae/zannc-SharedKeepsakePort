@@ -29,7 +29,7 @@ gods.CreateKeepsake({
 		},
 	},
 
-	EquipSound = "/SFX/Enemy Sounds/Megaera/MegaeraHealthFillUp",
+	EquipSound = nil,
 	-- ProcSound = "/Leftovers/SFX/PositiveTalismanProc_2",
 
 	Keepsake = {

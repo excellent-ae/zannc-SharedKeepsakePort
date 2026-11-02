@@ -37,7 +37,7 @@ gods.CreateKeepsake({
         },
     },
 
-    EquipSound = "/SFX/Menu Sounds/KeepsakeEurydiceAcorn",
+    EquipSound = nil,
 
     Keepsake = {
         displayName = "Pierced Butterfly",
