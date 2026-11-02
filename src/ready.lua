@@ -13,6 +13,25 @@ mod.patroKeepsakeName = gods.GetInternalKeepsakeName("ShieldAfterHitKeepsake")
 mod.thanaKeepsakeName = gods.GetInternalKeepsakeName("PerfectClearDamageBonusKeepsake")
 mod.hermesKeepsakeName = gods.GetInternalKeepsakeName("FastClearDodgeBonusKeepsake")
 
+function mod.CheckDusaBreakableDrop(functionArgs, attacker, victim, triggerArgs)
+    local dropCount = SessionMapState.ZanncSharedKeepsakePortDusaDropCount or 0
+    if victim == nil or victim.GenusName ~= "Breakable" or attacker ~= CurrentRun.Hero or triggerArgs.DamageAmount <= 0 or dropCount >= functionArgs.DropCap then
+        return
+    end
+
+    if not RandomChance(functionArgs.Chance * GetTotalHeroTraitValue("LuckMultiplier", { IsMultiplier = true })) then
+        return
+    end
+
+    SessionMapState.ZanncSharedKeepsakePortDusaDropCount = dropCount + 1
+    local id = game.SpawnObstacle({ Name = functionArgs.Name, DestinationId = victim.ObjectId, Group = "Standing" })
+    local reward = game.CreateConsumableItem(id, functionArgs.Name, 0)
+    reward.NPCDrop = true
+    ApplyConsumableItemResourceMultiplier(game.CurrentRun, reward)
+    PlaySound({ Name = "/Leftovers/Menu Sounds/CoinFlash", Id = id })
+    ApplyUpwardForce({ Id = id, Speed = RandomFloat(functionArgs.UpwardForceMin, functionArgs.UpwardForceMax) })
+end
+
 modutil.mod.Path.Wrap("StartEncounterEffects", function(base, encounter)
     local currentRun = game.CurrentRun
     local currentRoom = currentRun.CurrentRoom

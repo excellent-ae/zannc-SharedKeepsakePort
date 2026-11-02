@@ -50,13 +50,17 @@ gods.CreateKeepsake({
     },
 
     ExtraFields = {
-        DropOnKill = {
-            Chance = { BaseValue = 0.03 },
-            DropCap = 1,
-            Name = "HealDropMinor",
-            ValidEnemies = { "Breakable" },
-            ReportValues = {
-                ReportedDropRate = "Chance",
+        OnDamageEnemyFunction = {
+            FunctionName = _PLUGIN.guid .. ".CheckDusaBreakableDrop",
+            FunctionArgs = {
+                Chance = { BaseValue = 0.03 },
+                DropCap = 1,
+                Name = "HealDropMinor",
+                UpwardForceMin = 400,
+                UpwardForceMax = 500,
+                ReportValues = {
+                    ReportedDropRate = "Chance",
+                },
             },
         },
     },
