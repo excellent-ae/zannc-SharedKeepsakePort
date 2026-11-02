@@ -66,6 +66,7 @@ local function on_ready()
         "Orpheus",
         "Megaera",
         "Achilles",
+        "Dusa",
     }
 
     for _, name in ipairs(sharedPort_names) do

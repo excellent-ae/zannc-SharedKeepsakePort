@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Added Dusa's keepsake.
 - Internal changes for future Achilles support in `Zagreus' Journey`.
 
 ## [1.4.4] - 2026-10-30
