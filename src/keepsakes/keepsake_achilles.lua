@@ -50,7 +50,7 @@ gods.CreateKeepsake({
     },
 
     customGiftData = {
-        customName = "NPC_Achilles_01",
+        customName = "ModsNikkelMHadesBiomes_NPC_Achilles_01",
         maxRequirement = maxReq,
         minRequirement = minReq,
     },

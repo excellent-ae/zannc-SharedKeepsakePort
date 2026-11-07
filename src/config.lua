@@ -58,6 +58,14 @@ local config = {
         c_KeepsakeEpic = 3.0,
         d_KeepsakeHeroic = 4.0,
     },
+
+    Dusa = {
+        Enabled = true,
+        a_KeepsakeCommon = 1.0,
+        b_KeepsakeRare = 1.5,
+        c_KeepsakeEpic = 2.0,
+        d_KeepsakeHeroic = 2.5,
+    },
 }
 
 local descriptions = {
@@ -96,6 +104,11 @@ local descriptions = {
     Achilles = {
         Enabled = "Set to true to enable keepsake, false to disable.\nNOTE: When disabling keepsakes, make sure you unequip them and save your game",
         a_KeepsakeCommon = "Increase value to decrease damage taken, decrease for opposite effect.\nExample: 3.0 will reduce damage by 30%, 1.5 will reduce it by 15%",
+    },
+
+    Dusa = {
+        Enabled = "Set to true to enable keepsake, false to disable.\nNOTE: When disabling keepsakes, make sure you unequip them and save your game",
+        a_KeepsakeCommon = "Increase value to increase the chance of a broken urn dropping a healing item, decrease for opposite effect.\nExample: 1.0 gives a 3% chance, 2.0 gives 6%, and 0.5 gives 1.5%",
     },
 }
 
