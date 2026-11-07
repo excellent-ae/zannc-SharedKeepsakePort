@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-11-07
+
 - Added Dusa's keepsake.
 - Internal changes for future Achilles support in `Zagreus' Journey`.
 
@@ -116,7 +118,8 @@
 
 - Initial Release.
 
-[unreleased]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.4...HEAD
+[unreleased]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.5.0...HEAD
+[1.5.0]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.4...1.5.0
 [1.4.4]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.3...1.4.4
 [1.4.3]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.2...1.4.3
 [1.4.2]: https://github.com/excellent-ae/zannc-SharedKeepsakePort/compare/1.4.1...1.4.2
